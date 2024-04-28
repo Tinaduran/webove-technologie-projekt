@@ -2,9 +2,10 @@
 <html lang="sk" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Sun beach Hotels & resorts</title>
+    <title>Formular pre registraciu</title>
     <link href="styl.css" rel="stylesheet" type="text/css"/>
     <script src="https://kit.fontawesome.com/0e15774c58.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 <div id="biela">
@@ -33,19 +34,33 @@
 
     </nav>
 </div>
-<div id="hlavnytext" class="container text-center">
-    <h1 class="mt-4 mb-4">Kontakt</h1>
-    <p class="text-justify">Adresa:</p>
-    <p class="text-justify">Dlhá 229</p>
-    <p class="text-justify">845 05 Bratislava</p>
-    <br>
-    <h2>Napíšte nám</h2>
-    <form action="" method="post">
-        <textarea name="message" rows="10" cols="30"></textarea>
-        <br><br>
-        <input type="submit">
+<div class="container">
+    <form id="form" action="/">
+        <h1>Registrácia</h1>
+        <div class="input-control">
+            <label for="username">Používateľské meno</label>
+            <input id="username" placeholder="zadajte svoje meno" name="username" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="email">Email</label>
+            <input id="email" placeholder="zadajte svoj email" name="email" type="text">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password">Heslo</label>
+            <input id="password" placeholder="zadajte nové heslo" name="password" type="password">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password2">Overenie hesla</label>
+            <input id="password2" placeholder="zopakujte nové heslo" name="password2" type="password">
+            <div class="error"></div>
+        </div>
+        <button type="submit">Sign Up</button>
     </form>
 </div>
+<script src="JS.js"></script>
 </body>
 <footer class="container bg-grey text-black">
     <div class="row pt-3 pb-3">

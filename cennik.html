@@ -30,23 +30,47 @@
                 <a class="nav-link" href="registracia.html">Registrácia</a>
             </li>
         </ul>
-
     </nav>
 </div>
 <div id="hlavnytext" class="container text-center">
-    <h1 class="mt-4 mb-4">Kontakt</h1>
-    <p class="text-justify">Adresa:</p>
-    <p class="text-justify">Dlhá 229</p>
-    <p class="text-justify">845 05 Bratislava</p>
-    <br>
-    <h2>Napíšte nám</h2>
-    <form action="" method="post">
-        <textarea name="message" rows="10" cols="30"></textarea>
-        <br><br>
-        <input type="submit">
-    </form>
+    <h1 class="mt-4 mb-4">Cenník</h1>
+
+    <button type="button" class="btn btn-dark" onclick="loadDoc()">Zobraz cenník</button>
+
+    <p class="text-justify mt-5 mb-5" id="obsah"></p>
 </div>
-</body>
+
+<script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this);
+            }
+        };
+        xhttp.open("GET", "cennik.xml", true);
+        xhttp.send();
+    }
+    function myFunction(xml) {
+        var i;
+        var xmlDoc = xml.responseXML;
+        var table = "<table class='table table-striped text-left'><tr><th>Názov</th><th>Popis</th><th>Cena</th></tr>";
+        var x = xmlDoc.getElementsByTagName("druh_izby");
+        for (i = 0; i < x.length; i++) {
+                table += "<tr><td>" +
+                x[i].getElementsByTagName("nazov") [0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("popis") [0].childNodes[0].nodeValue +
+                "</td><td>" +
+                x[i].getElementsByTagName("cena") [0].childNodes[0].nodeValue +
+                "</td><td>";
+
+        }
+        table += "</table>";
+        document.getElementById("obsah").innerHTML = table;
+    }
+</script>
+
 <footer class="container bg-grey text-black">
     <div class="row pt-3 pb-3">
         <div class="col-3">
@@ -84,4 +108,5 @@
     </div>
     </div>
 </footer>
+</body>
 </html>

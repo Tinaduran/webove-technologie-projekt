@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cennik>
+    <druh_izby id="1">
+        <nazov>Jednolôžková izba</nazov>
+        <popis>1 jednolôžková posteľ, kúpeľňa, TV, minibar</popis>
+        <cena>
+            <sezóna>120€</sezóna>
+            <topsezóna>150€</topsezóna>
+        </cena>
+    </druh_izby>
+    <druh_izby id="2">
+        <nazov>Dvojlôžková izba Deluxe</nazov>
+        <popis>2 jednolôžkové postele, kúpeľňa, TV, minibar</popis>
+        <cena>
+            <sezóna>160€</sezóna>
+            <topsezóna>170€</topsezóna>
+        </cena>
+    </druh_izby>
+    <druh_izby id="3">
+        <nazov>Dvojlôžková izba Comfort</nazov>
+        <popis>1 veľká manželská posteľ, kúpeľňa, TV, minibar</popis>
+        <cena>
+            <sezóna>170€</sezóna>
+            <topsezóna>180€</topsezóna>
+        </cena>
+    </druh_izby>
+    <druh_izby id="4">
+        <nazov>Trojlôžková izba Comfort</nazov>
+        <popis>2 jednolôžkové postele, 1 jednolôžková posteľ, kúpeľňa, TV, minibar</popis>
+        <cena>
+            <sezóna>190€</sezóna>
+            <topsezóna>220€</topsezóna>
+        </cena>
+    </druh_izby>
+    <druh_izby id="5">
+        <nazov>Rodinná izba</nazov>
+        <popis>1 veľká manželská posteľ, 2 jednolôžkové postele, kúpeľňa, TV, minibar</popis>
+        <cena>
+            <sezóna>230€</sezóna>
+            <topsezóna>250€</topsezóna>
+        </cena>
+    </druh_izby>
+    <druh_izby id="6">
+        <nazov>Rodinná suita Deluxe s terasou</nazov>
+        <popis>1 veľká manželská posteľ, 1 pohovka, kúpeľňa, TV, minibar</popis>
+        <cena>
+            <sezóna>120€</sezóna>
+            <topsezóna>150€</topsezóna>
+        </cena>
+    </druh_izby>
+</cennik>

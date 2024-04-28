@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Sun beach Hotels & resorts</title>
     <link href="styl.css" rel="stylesheet" type="text/css"/>
+    <link href="css/lightbox.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/0e15774c58.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,9 +24,15 @@
             <li class="nav-item">
                 <a class="nav-link" href="kontakt.html">Kontakt</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cennik.html">Cenník</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="registracia.html">Registrácia</a>
+            </li>
+
         </ul>
 
-        <a href="#" class="register-btn">Registracia</a>
     </nav>
     <div class="hotel-gallery">
         <div class="hotel-title">
@@ -36,14 +43,16 @@
         </div>
     </div>
     <div class="gallery">
-        <div class="gallery-img-1"><img src="fotky/hotel1.png" alt="hotel"></div>
-        <div><img src="fotky/roome.png"></div>
-        <div><img src="fotky/restaurante.jpg.png"></div>
-        <div><img src="fotky/wellness.png"></div>
-        <div><img src="fotky/kupelnae.png"></div>
+        <div><a href="fotky/hotel1.png" data-lightbox="roadtrip" data-title="hotelový bazén"><img src="fotky/hotel1.png" alt="hotel"></a></div>
+        <div><a href="fotky/room.jpg" data-lightbox="roadtrip" data-title="izba standard"><img src="fotky/room.jpg" alt="room"></a></div>
+        <div><a href="fotky/wellness.jpg" data-lightbox="roadtrip" data-title="wellness"><img src="fotky/wellness.jpg" alt="wellness"></a></div>
+        <div><a href="fotky/kupelna.jpg" data-lightbox="roadtrip" data-title="kúpelňa"><img src="fotky/kupelna.jpg" alt="kupelna"></a></div>
+        <div><a href="fotky/recepcia.jpg" data-lightbox="roadtrip" data-title="recepcia"><img src="fotky/recepcia.jpg" alt="reception"></a></div>
+        <div><a href="fotky/jedlo.jpg" data-lightbox="roadtrip" data-title="reštaurácia"><img src="fotky/jedlo.jpg" alt="restaurant"></a></div>
     </div>
 </div>
-</body>
+
+
 <footer class="container bg-grey text-black">
     <div class="row pt-3 pb-3">
         <div class="col-3">
@@ -55,6 +64,7 @@
                 <li><a href="galeria.html">Galéria</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="cennik.html">Cenník</a></li>
             </ul>
         </div>
         <div class="col-3" id="foot_p">
@@ -68,16 +78,19 @@
         <div class="col-3">
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2664.149087046388!2d17.10986205137544!3d48.107359679119085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ssk!2ssk!4v1584453305513!5m2!1ssk!2ssk" width="200" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
-        <div class="clea r"/></div>
 
-    <div class="footer">
-        <a href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-        <a href="http://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-        <a href="http://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-        <a href="http://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-        <hr>
-        <p>Copyright © 2024, Kristina Duran-Bastak</p>
-    </div>
+
+        <div class="footer">
+            <a href="http://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="http://youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a href="http://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+            <a href="http://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <hr>
+            <p>Copyright © 2024, Kristina Duran-Bastak</p>
+        </div>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="js/lightbox.js"></script>
+</body>
 </html>
